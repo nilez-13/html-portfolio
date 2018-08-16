@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Contact us | Everyday Fitness</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/icon.ico" />
+		<meta name="description" content="Everyday Fitness Contact us page" />
+		<meta name="keywords" content="gym" />
+		<meta name="author" content="Nilej" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="../CSS/style.css">
+		<style>
+		/*setting overall style of body*/
+		body {
+				background-color: #2d2d2d; 
+				margin: 0;
+				font-family:Raleway;
+				
+		}
+		/*creating a table styled division*/
+		.contact{
+			display: table;
+   			width: 100%;
+    		color: grey;
+    		background: rgb(50,50,50);
+
+		}
+		/*creating cells for table styled division*/
+		.left{
+			display: table-cell;
+			width: 70%;
+			padding: 10px;
+		}
+		/*creating cells for table styled division*/
+		.right{
+			display: table-cell;
+			width: 30%;
+			padding: 10px;
+		}
+		/*setting background for input field*/
+		input{
+			background-color: rgb(50,50,50)
+
+		}
+		/*setting background for text area*/
+		textarea{
+			background : rgb(50,50,50)
+
+		}
+
+
+
+		</style>
+		<script src="../Java Script/alertmsg.js"></script>
+	</head>
+	<body >
+		
+		
+		<nav>
+			
+			<ul >
+				<li class="logo"><a href="home.html" style="padding: 0;"> <img src="../Images/logo2.jpg"></a></li>
+				<li ><a href="home.html">Home</a></li>
+				<li><a href="membership.html">Memberships</a></li>
+				<li ><a href="price.html">Pricing</a></li>
+				<li ><a href="events.html">Events</a></li>
+				<li ><a href="about.html">About us</a></li>
+				<li ><a href="#" class="current">Contact us</a></li>
+				
+			</ul>
+					
+		</nav>
+		<div style="padding: 10px;margin-top: 30px;" >
+		<header>
+			<h1 align="center" class="text2">Contact Us</h1>
+			<hr  style="border: 2px solid #c31a3e; width: 20%" >
+		</header>
+		
+		</div>
+		<br><br><br>
+		<section>
+			<!-- Contact form to be filled to get in contact with Everyday fitness gym -->
+			<div class="contact">
+				<div class="left">
+					<table>
+						<tr>
+							<th>
+								<h3 style="color: white;"> Please fill this form to get in contact with us. </h3>
+								<hr  style="border: 2px solid #c31a3e;" >
+							</th>
+						</tr>
+					</table>
+					<table width="100%" align="center" style="text-align: left;">
+						<form name="messageForm" onsubmit="validateForm()">
+						<tr>
+							<th>First Name</th>
+							<th><input type="text" name="firstname" required="required" placeholder="First name" style="width: 35% ;height:25px; color: white; "> </th>
+						</tr>
+						<tr>
+							<th>Last Name</th>
+							<th><input type="text" name="lastname" required="required" placeholder="Last name" style="width: 35% ;height:25px; color: white;"> </th>
+						</tr>
+						<tr>
+							<th>Gender</th>
+							<th><input type="radio" name="gender" value="male" checked> Male &nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="radio" name="gender" value="female"> Female </th>
+						</tr>
+						<tr>
+							<th>Phone Number </th>
+							<th><input type="text" name="phone" required="required" placeholder="Phone no."  style="width: 35% ;height:25px;color: white;"> </th>
+						</tr>
+						<tr>
+							<th>Email</th>
+							<th><input type="Email" name="email" required="required" placeholder="Eg: abc@gmail.com" style="width: 35% ;height:25px;color: white; "></th>
+						</tr>
+						<tr>
+							<th>Message</th>
+							<th><textarea name="message" rows="10" cols="35" placeholder="Enter message here" style="width: 35%;color: white;"></textarea></th>
+						</tr>
+						<tr>
+							<th style="float: right;"><input type="Reset" name="Reset" style="border-radius: 5px; color: white;"></th>
+							<th><input type="Submit" value="Submit" style="border-radius: 5px; color: white;"></th>
+						</tr>
+					</table>
+					</form>
+				</div>
+					<!-- Additional contact information -->
+				<div class="right">
+					<table width="100%" style="padding: 10px;">
+						<tr>
+							<th>
+							<h3 style="color: white;">Contact information</h3>
+							<hr style="border: 2px solid #c31a3e">
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<p>Contact us if you have any inquiries. Our team of professionals trainers will help you with your problems regarding fitness or if you have any inquires about our gym</p>
+								<hr style="border-color:  white;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<p>Phone : +001646487955</p>
+							<p>Email : everyday.fit@gmail.com</p>
+							<p>Address : Sanepa Height,Lalitpur</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<br><br><br>
+		<!-- Map showing location of the gym -->
+		<section>
+			<div class="container">
+			<h2> Our Location </h2>
+			<hr>
+			
+				<img src="../Images/map.jpg" alt="map" width="100%">
+			</div>
+
+		</section>
+		<!-- <section>
+			<div id="map" style="width:100%;height:400px;background:rgb(50,50,50);"></div>
+
+				<script>
+				function myMap() {
+				  var mapCanvas = document.getElementById("map");
+				  var mapOptions = {
+				    center: new google.maps.LatLng(27.680956, 85.301917), zoom: 15
+				  };
+				  var map = new google.maps.Map(mapCanvas, mapOptions);
+				}
+				</script>
+
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe0eazmv-P4G3byau0yF9lWsaDZHVJADE&callback=myMap"></script>
+				
+		</section> -->
+		<br><br><br>
+		<footer>
+			<div class="footer">
+
+				<div class="foot">
+					<h3>CONTACT INFORMATION</h3>
+					<p>Phone : +001646487955</p>
+					<p>Email : everyday.fit@gmail.com</p>
+					<p>Address : Sanepa Height,Lalitpur</p>
+				</div>
+
+				<div class="foot">
+					<h3>SOCIAL ACCOUNTS</h3> 
+					 <a href="https://www.instagram.com/?hl=en" target="_blank" style="align-content: left;padding: 0;"><img src="../Images/ig2.png" width="30" height="30"></a>
+					<a href="https://www.facebook.com/" target="_blank" style="align-content: left; padding: 0;"><img src="../Images/fb2.png" width="30" height="30"></a>
+					<a href="https://twitter.com/" target="_blank" style="align-content: left; padding: 0;"><img src="../Images/twt.png" width="30" height="30"></a>
+				</div>
+
+				<div class="foot">
+					<h3>WE ARE OPEN</h3>
+					<p>Sunday - Friday</p>
+					<p>Morning : 6-12</p>
+					<p>Evenings: 3-10 </p>
+				</div>
+
+			</div>
+			<div class="ownership">
+				<table width="100%">
+					<tr>
+						<td style="float: left;">&copy; All rights reserved by Everyday Fitness Gym</td>
+						<td style="float: right;"> Designed by :Nilej Sthapit</td>
+					</tr>
+				</table>
+				
+			</div>
+		</footer>
+	</body>
+</html>

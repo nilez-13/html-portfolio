@@ -1,0 +1,170 @@
+/*used to change font*/
+@font-face{
+	font-family: Raleway;
+	src:url('Raleway.ttf');
+}
+/*used to change font*/
+@font-face{
+	font-family: lato;
+	src:url('lato-bold.ttf');
+}
+/*used to change text color of link when you hover mouse over link*/
+a:hover {color:white ;}
+
+/*used to change background color of link inside list when you hover mouse over link*/
+li a:hover{
+	background-color: black;
+}
+/*used to create list with required style  for navigation bar*/
+ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgb(50,50,50);
+			position: fixed;
+			top: 0;
+			width: 100%;
+			color: white;
+			font-family: Raleway;
+		}
+li{
+	float: left;
+/*used to create list with required style  for navigation bar*/	
+}
+li a{
+		display: block;
+		padding: 14px 16px;
+		text-align: center;
+		background-color: rgb(50,50,50); 
+		text-decoration: none;
+		color: white;
+
+}
+/*if mouse is hovered over non active page link in navigation bar then its background color will be grey */
+li a:hover:not(.current){
+	background-color: grey;
+}
+/*used to set style of link */
+.link{
+	color: red;
+	
+}
+/*used to manage logo in navigation bar*/
+.logo{
+	width: 220px;
+	height: 100%;
+	float: left;
+
+}
+/*used to manage logo in navigation bar*/
+li img{
+	display: block;
+	float: left;
+}
+
+/*style for a container to display some info inside*/
+.container {
+	width:90%;
+	background-color:rgb(50,50,50);
+	text-align:center;
+	margin:auto;
+	padding:10px;
+	color: white;
+}
+/*setting diffrent fonts for headings*/
+h1,h2,h3,h4,h5,h6,th{
+	font-family:Lato;
+}
+/*used to make current page in nav bar different then the rest*/
+.current {
+
+	opacity: 0.2;
+
+}
+
+/*diffrent text style */
+.text2 {
+		font-family:lato;
+		color: white;
+}
+/*changing default font*/
+p{
+	font-family:Raleway;
+}
+/*changing default font*/
+table{
+	font-family:Raleway;
+}
+/*creating table styled division for footer*/
+.footer{
+	font-family:Raleway;
+	background-color: rgb(50,50,50);
+	display: table;
+    width: 100%;
+    color: white;
+    
+/*creating table cell typed division for footer*/    
+}
+.foot{
+	display: table-cell;
+    padding: 16px;
+}
+/*creating another table styled division for footer*/
+.ownership{
+	font-family:Raleway;
+	background-color: #2d2d2d;
+	display: table;
+    width: 100%;
+    color: white;
+}
+/*creating a card styled division to show a persons info*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    width: 80%;
+    border-radius: 5px;
+
+   
+}
+/*creating a animation style while hovering over card*/
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+/*giving rounder shape to edges*/
+.trainer{
+	 border-radius: 5px 5px 0 0;
+}
+/*setting text color and padding for info*/
+.trainerinfo{
+
+    padding: 2px 16px;
+    color: white;
+
+}
+/*a division where images can be manually slided*/
+.slide{
+	width: 90%
+	background-color:rgb(50,50,50);
+	text-align:center;
+	margin:auto;
+	padding:20px;
+	color: white;
+	max-width: 1000px;
+
+}
+/*styling for button*/
+.btn{
+	color: white;
+	background-color: rgb(50,50,50);
+	border-style: none;
+	padding: 15px;
+	cursor: pointer;
+
+
+}
+/*setting what happens when cursor is hovered over button class*/
+.btn:hover{
+	opacity: 0.5;
+}
+
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Home | Everyday Fitness</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="../Images/icon.ico" />
+		<meta name="description" content="Everyday Fitness home page" />
+		<meta name="keywords" content="gym" />
+		<meta name="author" content="Nilej" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="../CSS/style.css">
+		<style>
+		/*setting background color and margin*/
+		body {
+				background-color: #2d2d2d; 
+				margin: 0;
+				font-family: Raleway;
+
+		}
+		/*setting style for table heading with link*/
+		th a{
+			color: white;
+			display: block;
+			text-decoration: none;
+		}
+
+
+
+		</style>
+
+	</head>
+	<body >
+		
+		
+		<nav>
+			
+			<ul >
+				<li class="logo"><a href="home.html" style="padding: 0;"> <img src="../Images/logo2.jpg"></a></li>
+				<li ><a href="#" class="current">Home</a></li>
+				<li><a href="membership.html">Memberships</a></li>
+				<li ><a href="price.html">Pricing</a></li>
+				<li ><a href="events.html">Events</a></li>
+				<li ><a href="about.html">About us</a></li>
+				<li ><a href="contact.html">Contact us</a></li>
+				
+			</ul>
+					
+		</nav>
+		
+		<div style="padding: 5px;margin-top: 30px; background: #2d2d2d" >
+		<header>
+			<h1 align="center" class="text2">Join us and take a step towards fitness.</h1>
+		</header>
+		
+		</div>
+		
+		<!-- shows some of the images of Everyday Fitness Gym with buttons to change the images-->
+		<section>
+			<div class="slide">
+			<table align="current" width="100%">
+			<tr>
+				<th><button onclick="change(-1)" class="btn" >&#10094;</button></th>
+				<th>
+				<img class="slider" src="../Images/gym.jpg" alt="gym" width="100%" >
+				<img class="slider" src="../Images/gym2.jpg" alt="gym" width="100%">
+				<img class="slider" src="../Images/gym3.jpg" alt="gym" width="100%">
+				</th>	
+				<th><button onclick="change(1)" class="btn" >&#10095;</button></th>
+			</tr>
+			
+			</table>
+			</div>
+		</section>
+		<br><br><br>
+
+		<!-- Short description of the gym -->
+		<section>
+			<div class="container">
+				<h2>EVERYDAY FITNESS GYM, NEPAL</h2>
+				<p>
+					We provide unique training methods to each individuals according to their fitness goals, current fitness levels and body types. We have certified trainers who provide proper informations regarding training.   
+				</p>
+				<p><a href="about.html" class="link">Know more </a>
+			</div>
+		</section>
+		<br><br><br>
+
+		<!-- links to facilities of the gym with images that depict said faicility -->
+		<section>
+			<div class="container">
+				<h2>FACILITIES</h2>
+				<table width="100%" align="center">
+					<tr>
+					<th><a href="membership.html#gym" ><img src="../Images/lifting.jpg" alt="gym" style="width: 70%"> <figcaption>GYM</figcaption></a></th>
+					<th><a href="membership.html#cardio"><img src="../Images/cardio.jpg" alt ="cardio" style="width: 70%" ><figcaption>CARDIO</figcaption></a></th>
+					</tr>
+
+					<tr>
+					<th><a href="membership.html#zumba"><img src="../Images/Zumba.jpg" alt="Zumba"style="width: 70%"> <figcaption>ZUMBA</figcaption></a></th>	
+					<th><a href="membership.html#Fitness"><img src="../Images/fitness.jpg" alt="fitness"style="width: 70%"> <figcaption>FUNCTIONAL FITNESS</figcaption></a></th>
+					</tr>
+				</table>
+				
+				
+			</div>
+		</section>
+		<br><br><br>
+
+		<footer>
+			<div class="footer">
+
+				<div class="foot">
+					<h3>CONTACT INFORMATION</h3>
+					<p>Phone : +001646487955</p>
+					<p>Email : everyday.fit@gmail.com</p>
+					<p>Address : Sanepa Height,Lalitpur</p>
+				</div>
+
+				<div class="foot">
+					<h3>SOCIAL ACCOUNTS</h3> 
+					 <a href="https://www.instagram.com/?hl=en" target="_blank" style="align-content: left;padding: 0;"><img src="../Images/ig2.png" width="30" height="30"></a>
+					<a href="https://www.facebook.com/" target="_blank" style="align-content: left; padding: 0;"><img src="../Images/fb2.png" width="30" height="30"></a>
+					<a href="https://twitter.com/" target="_blank" style="align-content: left; padding: 0;"><img src="../Images/twt.png" width="30" height="30"></a>
+				</div>
+
+				<div class="foot">
+					<h3>WE ARE OPEN</h3>
+					<p>Sunday - Friday</p>
+					<p>Morning : 6-12</p>
+					<p>Evenings: 3-10 </p>
+				</div>
+
+			</div>
+			<div class="ownership">
+				<table width="100%">
+					<tr>
+						<td style="float: left;">&copy; All rights reserved by Everyday Fitness Gym</td>
+						<td style="float: right;"> Designed by :Nilej Sthapit</td>
+					</tr>
+				</table>
+				
+			</div>
+			
+		</footer>
+
+		<!-- java script code  which changes the images of the gym on the press of the button at each sides of the image -->
+		<script>
+			var CurrentIndex = 0; //set curent index to 0
+			show(CurrentIndex); //show image having index equal to CurrentIndex
+
+			function change(n) {
+				CurrentIndex += n; //add or subtract 1 to CurrentIndex
+				show(CurrentIndex); //show image having index equal to CurrentIndex
+			}
+
+			function show(n) {
+				var i;
+				var x = document.getElementsByClassName("slider"); //gets all elements having class as "slider" and puts in an array
+				
+				if (n > x.length - 1) {
+ 					CurrentIndex = 0; //if n exceeds the indexes of the array then set CurrentIndex to 0
+				}    
+				if (n < 0) {
+					CurrentIndex = x.length - 1; //if n is negative then set CurrentIndex to the last index of the array
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  //set display none to all elements 
+				}
+				
+				x[CurrentIndex].style.display = "block";  //set display block to element with index equal to CurrentIndex
+			}
+		</script>
+	</body>
+</html>
